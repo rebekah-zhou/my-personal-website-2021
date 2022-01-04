@@ -1,8 +1,51 @@
 body {
     background: darkslateblue;
     color: white;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 h1 {
     font-family: 'Courier New', Courier, monospace;
+    text-align: center;
 }
+
+p {
+    font-size: xx-large;
+}
+
+.sidenav {
+    height: 100%;
+    width: 10%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF; opacity: 0.5; filter: alpha(opacity=50);
+    overflow-x: hidden;
+    padding-top: 20px;
+    float: left;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: auto;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: hotpink;
+}
+
+.sidenav img {
+    margin: auto;
+    max-width: 70%;
+    height: auto;
+}
+
+.main {
+    height: 100%;
+    width: 90%;
+    float: right;
+}
+

@@ -1,7 +1,7 @@
 body {
-    background: darkslateblue;
+    background: grey;
     color: white;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font: 400 15px/1.8 "Lato", sans-serif;
 }
 h1 {
     font-family: 'Courier New', Courier, monospace;
@@ -19,14 +19,14 @@ p {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #FFFFFF; opacity: 0.5; filter: alpha(opacity=50);
+    background-color: #FFFFFF;
     overflow-x: hidden;
     padding-top: 20px;
     float: left;
 }
 
 .sidenav a {
-    padding: 6px 8px 6px 16px;
+    padding: 6px 8px 6px 16px; 
     text-decoration: none;
     font-size: auto;
     color: #818181;
@@ -34,7 +34,7 @@ p {
 }
 
 .sidenav a:hover {
-    color: hotpink;
+    color: rgb(212, 140, 240);
 }
 
 .sidenav img {
@@ -43,9 +43,54 @@ p {
     height: auto;
 }
 
+.sidenav img:hover {
+    opacity: 0.5;
+}
+
 .main {
     height: 100%;
     width: 90%;
     float: right;
 }
 
+body, html {
+    height: 100%;
+}
+
+
+.bgimg-1 {
+    background-image: url(images/IMG_4653.jpg);
+    min-height: 100%;
+    background-position-y: -150px;
+}
+
+.bgimg-2 {
+    background-image: url(images/IMG_3293.jpg);
+    min-height: 100%;
+}
+
+
+.bgimg-1, .bgimg-2 {
+    position: relative;
+    background-attachment: fixed;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.border {
+    background-color: white;
+    color: black;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}

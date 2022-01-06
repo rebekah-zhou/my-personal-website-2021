@@ -22,7 +22,7 @@ p {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #FFFFFF;
+    background-color: #faf8ef;
     overflow-x: hidden;
     padding-top: 20px;
     float: left;
@@ -88,16 +88,13 @@ body, html {
     left: 0;
     top: 10%;
     width: 100%;
-    text-align: center;
+    text-align: left;
     color: #000;
 }
 
-.caption span.border {
-    background-color: white;
+.caption .bio {
     color: black;
     padding: 18px;
-    font-size: 25px;
-    letter-spacing: 10px;
 }
 
 .lookingFor {
@@ -132,4 +129,54 @@ body, html {
     letter-spacing: .5px;
     line-height: 36px;
     text-decoration: none;
+}
+
+.wtbg {
+    background-color: #faf8ef;
+    margin: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    /* width: fit-content; */
+}
+
+li.wtbg {
+    width: fit-content;
+    padding-left: 30px;
+}
+
+@font-face {
+    font-family: 'Rock Salt';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Rock Salt'), local('RockSalt'), url(http://themes.googleusercontent.com/static/fonts/rocksalt/v4/Q94aHXFHGip10K5uxi1jOD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+  }
+
+.dfn ol {
+    list-style-type: none;
+    counter-reset: orangeNumbers;
+    margin-left: 0px; 
+    font-family: 'Rock Salt';
+    /* background-color: #faf8ef; */
+}
+
+.dfn ol li {
+    color: darkslategrey;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-left: 20px;
+}
+
+.dfn ol li:before {
+    position: absolute;
+    margin-left: -30px;
+    content: counter(orangeNumbers) ".";
+    counter-increment: orangeNumbers;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-top: -12px;
+    color: #F60;
+    font-family: 'Rock Salt', cursive;
+    font-size: 14px;
+    line-height: normal;
+    width: fit-content;
+
 }

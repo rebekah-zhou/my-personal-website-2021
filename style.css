@@ -37,7 +37,7 @@ p {
 }
 
 .sidenav a:hover {
-    color: rgb(212, 140, 240);
+    color: rgb(255, 51, 0);
 }
 
 .sidenav img {
@@ -114,12 +114,6 @@ body, html {
     padding-right: 15px;
 }
 
-.dfn {
-    font-family: Roboto,arial,sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-}
-
 .noun {
     font-family: Playfair Display,serif;
     font-size: 26px;
@@ -163,6 +157,8 @@ li.wtbg {
     color: darkslategrey;
     font-family:Georgia, 'Times New Roman', Times, serif;
     margin-left: 20px;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .dfn ol li:before {
@@ -173,7 +169,7 @@ li.wtbg {
     padding-left: 10px;
     padding-top: 10px;
     margin-top: -12px;
-    color: #F60;
+    color: rgb(255, 51, 0);
     font-family: 'Rock Salt', cursive;
     font-size: 14px;
     line-height: normal;

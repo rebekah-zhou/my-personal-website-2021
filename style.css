@@ -1,7 +1,7 @@
 body {
     background-color: rgba(230, 35, 1, 0.5);
-    color: white;
-    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #faf8ef;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 h1 {
@@ -89,11 +89,11 @@ body, html {
     top: 10%;
     width: 100%;
     text-align: left;
-    color: #000;
+    color: rgb(34, 41, 41);
 }
 
 .caption .bio {
-    color: black;
+    color: rgb(34, 41, 41);
     padding: 18px;
 }
 
@@ -125,6 +125,27 @@ body, html {
     text-decoration: none;
 }
 
+blockquote {
+    font-style:italic;
+}
+
+blockquote::before {
+    content: open-quote;
+}
+
+blockquote::after {
+    content: close-quote;
+}
+
+figure.quote blockquote.wtbg{
+    quotes: "“" "”" "‘" "’";
+    font-weight:300;
+}
+
+.small {
+    font-size:x-small;
+}
+
 .wtbg {
     background-color: #faf8ef;
     margin: 5px;
@@ -133,8 +154,11 @@ body, html {
     /* width: fit-content; */
 }
 
-li.wtbg {
+li.wtbg, blockquote.wtbg, figcaption.wtbg {
     width: fit-content;
+}
+
+li.wtbg  {
     padding-left: 30px;
 }
 
@@ -168,7 +192,7 @@ li.wtbg {
     counter-increment: orangeNumbers;
     padding-left: 10px;
     padding-top: 10px;
-    margin-top: -12px;
+    margin-top: -15px;
     color: rgb(255, 51, 0);
     font-family: 'Rock Salt', cursive;
     font-size: 14px;

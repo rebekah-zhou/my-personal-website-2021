@@ -1,9 +1,20 @@
 body {
-    /* background-color: rgba(230, 35, 1, 0.5);
-    color: #faf8ef; */
-    color: rgba(230, 35, 1, 0.6);
+    /* color: rgba(230, 35, 1, 0.6); */
+    color:darkslategrey;
     background-color: #faf8ef;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.material-icons-outlined {
+    font-family: 'Material Icons';
+    font-size: 15px;
+    color:rgba(230, 35, 1, 0.6);
+}
+
+hr {
+    margin-left: 40px;
+    margin-right: 40px;
+    opacity: 0.4;
 }
 
 h1 {
@@ -13,22 +24,34 @@ h1 {
     font-size: 48px;
 }
 
-h2, h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 32px;
-    font-weight: normal;
-    padding-left: 10%;
-    letter-spacing: 1px;
+h2 {
+    font-size: 24px;
+    padding-left: 12.5%;
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 18px;
+    padding-left: 12.5%;
 }
 
-p, li {
-    font-size: large;
-    padding-left: 5%;
-    padding-right: 5%;
+h4 {
+    font-size: 16px;
+    padding-left: 15%;
+}
+
+h2, h3, h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+h1, .dot {
+    color: rgba(230, 35, 1, 0.6);
+}
+
+p, ul {
+    /* font-size: large; */
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .sidenav {
@@ -52,6 +75,7 @@ p, li {
     /* color: #818181; */
     color: darkslategrey;
     display: block;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .sidenav a:hover {

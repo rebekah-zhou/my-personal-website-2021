@@ -73,7 +73,7 @@ p, ul {
 }
 
 .sidenav a {
-    padding: 6px 8px 6px 16px; 
+    padding: 6px 8px 16px 16px; 
     text-decoration: none;
     font-size: auto;
     /* color: #818181; */
@@ -117,7 +117,7 @@ body, html {
 
 .bgimg-2 {
     background-image: url(images/IMG_3293.jpg);
-    min-height: 100%;
+    min-height: 100%; 
 }
 
 
@@ -232,4 +232,14 @@ li.wtbg  {
     line-height: normal;
     width: fit-content;
 
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+    .bgimg-1, .bgimg-2 {
+        display:block;
+        max-width: 100%;
+    }
 }

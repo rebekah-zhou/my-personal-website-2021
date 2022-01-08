@@ -5,6 +5,10 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.entry {
+    padding-bottom: 30px;
+}
+
 .material-icons-outlined {
     font-family: 'Material Icons';
     font-size: 15px;
